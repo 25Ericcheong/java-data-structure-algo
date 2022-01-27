@@ -32,7 +32,6 @@ public class QuickSort {
         int j = end;
 
         while (i < j) {
-
             // empty loop body - looking for value smaller than pivot
             // if it is, need to move it to the left of pivot
             while (i < j && input[--j] >= pivot);
