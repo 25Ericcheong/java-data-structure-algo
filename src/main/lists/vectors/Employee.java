@@ -1,4 +1,4 @@
-package main.lists.arraylists;
+package main.lists.vectors;
 
 import java.util.Objects;
 
