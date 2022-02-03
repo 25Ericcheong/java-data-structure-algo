@@ -1,4 +1,6 @@
-package main.stack;
+package main.stack.arraystack;
+
+import main.stack.Employee;
 
 import java.util.EmptyStackException;
 
