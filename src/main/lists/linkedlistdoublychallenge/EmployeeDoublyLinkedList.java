@@ -33,7 +33,36 @@ public class EmployeeDoublyLinkedList {
         size++;
     }
 
-    public boolean
+    public boolean addBefore(Employee newEmployee, Employee existingEmployee) {
+        if (head == null) {
+            return false;
+        }
+
+        // find existing employee, will traverse nodes in linked list to find specified employee
+        EmployeeNode current = head;
+        while (current != null && !current.getEmployee().equals(existingEmployee)) {
+            current = current.getNext();
+        }
+
+        if (current == null) {
+            return false;
+        }
+
+        // found existing employee in list, now insert new employee
+        EmployeeNode newNode = new EmployeeNode(newEmployee);
+        newNode.setPrevious(current.getPrevious());
+        newNode.setNext(current);
+        current.setPrevious(newNode);
+
+        if (head == current) {
+            head = newNode;
+        } else {
+            newNode.getPrevious().setNext(newNode);
+        }
+
+        size++;
+        return true;
+    }
 
     public EmployeeNode removeFromFront() {
         if (isEmpty()) {

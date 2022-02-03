@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Employee janeJones = new Employee("Jane", "Jones", 123);
+        Employee johnDoeAdd = new Employee("John", "Doe", 4567);
         Employee johnDoe = new Employee("Mary", "Jones", 456);
         Employee marySmith = new Employee("Jane", "Jones", 22);
         Employee mikeWilson = new Employee("Mike", "Jones", 3245);
@@ -21,12 +22,7 @@ public class Main {
         list.addToEnd(billEnd);
         list.printList();
 
-        list.removeFromFront();
+        list.addBefore(johnDoeAdd, johnDoe);
         list.printList();
-        System.out.println(list.getSize());
-
-        list.removeFromEnd();
-        list.printList();
-        System.out.println(list.getSize());
     }
 }
