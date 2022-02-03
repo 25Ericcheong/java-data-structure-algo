@@ -15,14 +15,20 @@ public class ArrayQueue {
     }
 
     public void add(Employee employee) {
-        if (back == queue.length) {
+        // only resize when number of element in queue is equal to designated array size
+        if (size() == queue.length - 1) {
             Employee[] newArray = new Employee[2 * queue.length];
             System.arraycopy(queue, 0, newArray, 0, queue.length);
             queue = newArray;
         }
 
         queue[back] = employee;
-        back++;
+        // this allows back to make a circular roundabout around the queue array
+        if (back < queue.length - 1) {
+            back++;
+        } else {
+            back = 0;
+        }
     }
 
     public Employee remove() {
