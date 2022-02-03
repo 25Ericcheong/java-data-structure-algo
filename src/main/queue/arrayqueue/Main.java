@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayQueue queue = new ArrayQueue(10);
+        ArrayQueue queue = new ArrayQueue(6);
 
         queue.add(new Employee("Jane", "Jones", 123));
         queue.add(new Employee("John", "Doe", 456));
