@@ -1,4 +1,4 @@
-package main.hashtable.chainedhasttable;
+package main.hashtable.chainedhashtable;
 
 import main.hashtable.Employee;
 
