@@ -11,4 +11,10 @@ public class Tree {
             root.insert(value);
         }
     }
+
+    public void traverInOrder() {
+        if (root != null) {
+            root.traverseInOrder();
+        }
+    }
 }
