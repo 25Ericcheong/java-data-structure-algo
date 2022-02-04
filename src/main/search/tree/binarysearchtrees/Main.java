@@ -15,5 +15,12 @@ public class Main {
         intTree.insert(32);
 
         intTree.traverInOrder();
+
+        System.out.println();
+        System.out.println(intTree.get(27));
+        System.out.println(intTree.get(888));
+
+        System.out.println(intTree.max());
+        System.out.println(intTree.min());
     }
 }
