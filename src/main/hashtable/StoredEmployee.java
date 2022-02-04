@@ -1,6 +1,4 @@
-package main.hashtable.simplehashtable;
-
-import main.hashtable.Employee;
+package main.hashtable;
 
 public class StoredEmployee {
 

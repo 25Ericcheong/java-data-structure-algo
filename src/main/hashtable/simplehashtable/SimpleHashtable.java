@@ -1,6 +1,7 @@
 package main.hashtable.simplehashtable;
 
 import main.hashtable.Employee;
+import main.hashtable.StoredEmployee;
 
 public class SimpleHashtable {
 
